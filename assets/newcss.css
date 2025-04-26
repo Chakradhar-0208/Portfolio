@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /*================ VARIABLES CSS ==========*/
 
 :root {
@@ -24,7 +23,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========= Font and typography ===========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Inter",sans-serif;
 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -732,6 +731,30 @@ img {
   visibility: visible;
 }
 
+
+/*========Summer Training============*/
+
+@media (max-width:768px) {
+  .summer_training{
+    padding: 32px 0px 64px !important;
+  }
+  
+}
+
+.training__data{
+  max-width: 768px;
+  padding: 0px 24px;
+}
+.summer_training{
+  padding: 94px 0px 64px;
+}
+
+.training__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*================== Portfolio ==================*/
 
 .portfolio__container {
