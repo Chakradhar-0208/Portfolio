@@ -75,6 +75,7 @@ body.dark-theme {
   }
 
 
+
   .footer__bg{
 
     background-color: rgb(18, 18, 18);
@@ -1215,6 +1216,20 @@ img {
     padding: 0;
   }
 
+
+  .header{
+    background: #ffffff6c ;
+    backdrop-filter: blur(30px);
+  }
+
+  body.dark-theme{
+    .header{
+      background: #181818c7 !important;
+      backdrop-filter: blur(30px);
+    }
+  
+  }
+
   .home__blob {
     width: 280px;
   }
@@ -1231,3 +1246,10 @@ img {
     bottom: -4.5rem;
   }
 }
+
+
+
+
+
+
+
