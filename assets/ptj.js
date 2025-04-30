@@ -7,6 +7,7 @@ if (navToggle) {
   });
 }
 
+
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
@@ -176,4 +177,18 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+document.addEventListener('click', function (event) {
+  const navMenu = document.getElementById('nav-menu');
+  const navToggle = document.getElementById('nav-toggle');
+
+  // If menu is shown AND click is outside nav-menu and nav-toggle
+  if (
+    navMenu.classList.contains('show-menu') &&
+    !navMenu.contains(event.target) &&
+    !navToggle.contains(event.target)
+  ) {
+    navMenu.classList.remove('show-menu');
+  }
 });
