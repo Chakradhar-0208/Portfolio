@@ -55,6 +55,8 @@
   --z-modal: 1000;
 }
 
+
+
 /* Font Size for larger devices */
 @media screen and (min-width: 968px) {
   :root {
@@ -173,7 +175,7 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
@@ -207,24 +209,36 @@ img {
   .nav__menu {
     position: absolute;
     display: none;
-    bottom: -100%;
+    top:100%;
     left: 0;
+    height: 18.5rem;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(30px);
+    z-index: 100000;
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 1.5rem 1.5rem 0 0;
+    border-radius: 0 0 1.5rem 1.5rem;
     transition: 0.3s;
+    
   }
   
 
   .show-menu{
     display: block;
+    .nav{
+      display: none;
+    }
   }
 }
+
+
+
+
 .nav__list {
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .nav__link {
