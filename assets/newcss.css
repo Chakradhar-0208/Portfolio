@@ -221,8 +221,21 @@ img {
     border-radius: 0 0 1.5rem 1.5rem;
     transition: 0.3s;
     
-  }
+    
   
+  
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.show-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
   body.dark-theme{
     .nav__menu{
       background: rgba(18, 18, 18, 0.95) !important;
@@ -1277,4 +1290,5 @@ body.dark-theme{
   }
 
 }
+
 
